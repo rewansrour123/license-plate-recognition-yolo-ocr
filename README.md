@@ -4,6 +4,8 @@ A Computer Vision project for **License Plate Detection and Recognition** using 
 
 The system detects license plates from images and videos, extracts the plate region, preprocesses it, recognizes the plate text using OCR, and tracks detected plates across video frames.
 
+---
+
 ## 🚀 Project Pipeline
 
 ```text
@@ -26,6 +28,8 @@ License Plate Tracking
 Annotated Output Video
 ```
 
+---
+
 ## 🧠 Technologies
 
 * Python
@@ -37,6 +41,8 @@ Annotated Output Video
 * Matplotlib
 * Roboflow
 * Google Colab
+
+---
 
 ## ✨ Features
 
@@ -71,6 +77,8 @@ IoU (Intersection over Union) is used to associate detections between consecutiv
 
 Each tracked plate keeps an OCR history to improve the final recognized text.
 
+---
+
 ## 🎥 Video Processing
 
 The system processes video frame-by-frame:
@@ -102,11 +110,35 @@ The output video contains:
 * Recognized plate text
 * OCR confidence
 
+---
+
+## 📸 Results
+
+### License Plate Detection
+
+<p align="center">
+  <img src="download.png" width="45%">
+  <img src="download%20%283%29.png" width="45%">
+</p>
+
+<p align="center">
+  <img src="download%20%284%29.png" width="45%">
+  <img src="download%20%285%29.png" width="45%">
+</p>
+
+---
+
+## 🎥 Demo
+
+[▶️ Watch the License Plate Recognition Demo](license_plate_demo.mp4)
+
+---
+
 ## 🏋️ Model Training
 
 The YOLO11 model was trained using a license plate dataset from Roboflow.
 
-Example training code:
+### Training Code
 
 ```python
 from ultralytics import YOLO
@@ -121,6 +153,8 @@ model.train(
 )
 ```
 
+---
+
 ## 🔍 Image Inference
 
 Example:
@@ -133,6 +167,8 @@ results = model.predict(
 )
 ```
 
+---
+
 ## 📊 Model Evaluation
 
 The trained model was evaluated using:
@@ -142,22 +178,27 @@ The trained model was evaluated using:
 * Precision
 * Recall
 
+---
+
 ## 📁 Project Files
 
 ```text
 license-plate-recognition-yolo-ocr/
 │
 ├── README.md
-├── license_plate_recognition.ipynb
+├── license_plate_ocr.ipynb
 ├── requirements.txt
 ├── .gitignore
 │
-├── images/
-│   └── sample.jpg
+├── download.png
+├── download (3).png
+├── download (4).png
+├── download (5).png
 │
-└── results/
-    └── demo.jpg
+└── license_plate_demo.mp4
 ```
+
+---
 
 ## 🔮 Future Improvements
 
@@ -168,6 +209,8 @@ license-plate-recognition-yolo-ocr/
 * Real-time camera detection
 * Store recognized plates in a database
 * Build a web interface for real-time detection
+
+---
 
 ## 👨‍💻 Author
 
