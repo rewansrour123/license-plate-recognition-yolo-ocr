@@ -1,0 +1,9 @@
+ultralytics
+opencv-python
+numpy
+matplotlib
+paddleocr
+paddlepaddle
+roboflow
+pyyaml
+Pillow
